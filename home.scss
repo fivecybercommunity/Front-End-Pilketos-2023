@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background .bg{
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    right: 0;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.background .bg{
+    height: calc(min(100%,1851/1228*100vw));
+    width: calc(max(1851/1228*100vh, 100%));
+    filter: blur(5px);
+    
+}
+
+.background .mask-bg{
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
