@@ -19,7 +19,7 @@
 }
 
 .background .bg {
-  width: max(200vh, 100vw);
+  width: max(178vh, 100vw);
   filter: blur(5px);
 }
 
