@@ -4,29 +4,11 @@
 }
 
 
-.background{
-    width: 100vw;
+.jumbotron{
+    width: 100%;
     height: 100vh;
-    position: relative;
-    overflow: hidden;
-
-    //picture background
-    .bg{
-        position: absolute;
-        z-index: -2;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: max(calc((89/50)*100vh), 100vw);
-        filter: blur(5px);
-    }
-
-    //mask background
-    .mask-bg{
-        height: 100vh;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 0;
-    }
+    background:#1c6f4e6a url(./src/background.png) ;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
 }
