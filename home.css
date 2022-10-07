@@ -1,13 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #006C38;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 100%;
+  gap: 20px;
+}
+nav .logo img {
+  height: 90%;
+}
+nav .logo h1 {
+  font-weight: bold;
+  margin: 0;
+}
+nav .links {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+nav .links a {
+  color: white;
+  text-decoration: none;
+}
+nav .links a.login {
+  border: white 1px solid;
+  padding: 5px 20px;
 }
 
 .jumbotron {
   width: 100%;
-  height: 100vh;
-  background: rgba(28, 111, 78, 0.4156862745) url(./src/background.png);
+  height: 92vh;
+  background: rgba(28, 111, 78, 0.61) url(./src/background.png);
   background-size: cover;
   background-blend-mode: overlay;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+.jumbotron h1, .jumbotron a {
+  color: white;
+  font-weight: bold;
+}
+.jumbotron img {
+  height: 30%;
+}
+.jumbotron .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jumbotron a {
+  background-color: #F37920;
+  text-decoration: none;
 }/*# sourceMappingURL=home.css.map */
