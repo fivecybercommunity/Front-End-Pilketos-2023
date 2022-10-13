@@ -18,19 +18,15 @@ $breakpoint: (
     $arg:"";
     $value : map.get($breakpoint, $type);
     @if map.get($value, 1) == true{
-        $arg: "(max-width:#{map.get($value,2)})"
+        $arg: "(max-width:#{map.get($value,2)})";
     }@else if map.get($value, 2) == true{
-        $arg: "(max-width:#{map.get($value,1)})"
+        $arg: "(max-width:#{map.get($value,1)})";
     }@else{
-        $arg: "(min-width:#{map.get($value,1)}) and (max-width:#{map.get($value,2)})"
+        $arg: "(min-width:#{map.get($value,1)}) and (max-width:#{map.get($value,2)})";
     }
     @media only screen and #{$arg} {
         @content
     }
-};
-
-@include d(md){
-    h1{color:blue};
 };
 
 *{
@@ -101,6 +97,12 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 20%;
+
+    @include d(sm){
+        flex-direction: column-reverse;
+        gap: 10%;
+        padding: 0 10px;
+    }
 
     
     h1,a{
