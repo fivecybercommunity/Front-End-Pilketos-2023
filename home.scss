@@ -1,12 +1,13 @@
 @use "sass:map";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
-
 //var
 $filter: rgba(28, 111, 78, 0.61);
 $bg-color1:#006C38;
+$yellow: #F37920;
+$white: white;
 
+//breakpoint
 $breakpoint: (
     lg : (1:1024px,2:true),
     md: (1:768px,2: 1023px),
@@ -80,7 +81,7 @@ nav{
     }
 }
 
-
+//jumbotron
 .jumbotron{
     //size
     width: 100%;
@@ -121,7 +122,66 @@ nav{
     }
 
     a{
-        background-color: #F37920;
+        background-color: $yellow;
         text-decoration: none;
+    }
+}
+
+.calon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    row-gap: 30px;
+    .calonCard{
+        width: Min(80%, 200px);
+        border-bottom: $yellow solid 2px;
+        button{
+            color: $bg-color1;
+            font-weight: bold;
+        }
+        .no{
+            color: $bg-color1;
+            font-weight: bold;
+        }
+    }
+    .modal-body iframe{
+        width: 100%;
+        aspect-ratio: 560/315;
+    }
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    &> a.tatacara{
+        background-color: $bg-color1;
+        width: auto;
+        text-decoration: none;
+        color: white;
+        padding: 5px 30px;
+    }
+    @include d(sm){
+        &> a.tatacara{
+           padding: 5px; 
+        }
+    }
+}
+
+footer{
+    color: $white;
+    background-color: $bg-color1;
+    padding: 5vh 20px;
+    .logo-container img{
+        width: Min(80px,30%);
+    }
+    @include d(sm){
+        padding: 10vh 20px;
+        p{
+            text-align: center;
+        }
+
     }
 }

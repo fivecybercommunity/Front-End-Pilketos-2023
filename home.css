@@ -76,4 +76,64 @@ nav .links a.login {
 .jumbotron a {
   background-color: #F37920;
   text-decoration: none;
+}
+
+.calon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  row-gap: 30px;
+}
+.calon .calonCard {
+  width: min(80%, 200px);
+  border-bottom: #F37920 solid 2px;
+}
+.calon .calonCard button {
+  color: #006C38;
+  font-weight: bold;
+}
+.calon .calonCard .no {
+  color: #006C38;
+  font-weight: bold;
+}
+.calon .modal-body iframe {
+  width: 100%;
+  aspect-ratio: 560/315;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+h3 > a.tatacara {
+  background-color: #006C38;
+  width: auto;
+  text-decoration: none;
+  color: white;
+  padding: 5px 30px;
+}
+@media only screen and (max-width:767px) {
+  h3 > a.tatacara {
+    padding: 5px;
+  }
+}
+
+footer {
+  color: white;
+  background-color: #006C38;
+  padding: 5vh 20px;
+}
+footer .logo-container img {
+  width: min(80px, 30%);
+}
+@media only screen and (max-width:767px) {
+  footer {
+    padding: 10vh 20px;
+  }
+  footer p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=home.css.map */
