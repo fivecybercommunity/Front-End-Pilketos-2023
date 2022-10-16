@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   width: 100%;
   height: 10vh;
@@ -88,7 +92,7 @@ nav .links a.login {
   row-gap: 30px;
 }
 .calon .calonCard {
-  width: min(80%, 200px);
+  width: min(80%, 250px);
   border-bottom: #F37920 solid 2px;
 }
 .calon .calonCard button {

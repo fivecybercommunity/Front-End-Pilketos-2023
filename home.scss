@@ -36,6 +36,9 @@ $breakpoint: (
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 //navbar
 nav{
@@ -136,7 +139,7 @@ nav{
     gap: 10%;
     row-gap: 30px;
     .calonCard{
-        width: Min(80%, 200px);
+        width: Min(80%, 250px);
         border-bottom: $yellow solid 2px;
         button{
             color: $bg-color1;
