@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: #006C38;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 100%;
+  gap: 20px;
+}
+nav .logo img {
+  height: 90%;
+}
+nav .logo h1 {
+  font-weight: bold;
+  margin: 0;
+}
+nav .links {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+@media only screen and (max-width:767px) {
+  nav .links {
+    position: fixed;
+    flex-direction: column;
+    background-color: #006C38;
+    width: 100vw;
+    height: 90vh;
+    top: 10vh;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+}
+nav .links a {
+  color: white;
+  text-decoration: none;
+}
+nav .links a.login {
+  border: white 1px solid;
+  padding: 5px 20px;
+  transition: all 0.5s ease-in-out;
+}
+nav .links a.login:hover {
+  background-color: white;
+  color: #006C38;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 92vh;
+  background: rgba(28, 111, 78, 0.61) url(./src/background.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+@media only screen and (max-width:767px) {
+  .jumbotron {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10%;
+    padding: 0 10px;
+  }
+}
+.jumbotron h1, .jumbotron p {
+  color: white;
+  font-weight: bold;
+}
+.jumbotron img {
+  height: 30%;
+}
+.jumbotron .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jumbotron p {
+  background-color: #F37920;
+  text-decoration: none;
+}
+
+.calon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  row-gap: 30px;
+}
+.calon .calonCard {
+  width: min(80%, 250px);
+  border-bottom: #F37920 solid 2px;
+}
+.calon .calonCard button {
+  color: #006C38;
+  font-weight: bold;
+}
+.calon .calonCard .no {
+  color: #006C38;
+  font-weight: bold;
+}
+.calon .modal-body iframe {
+  width: 100%;
+  aspect-ratio: 560/315;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+h3 > a.tatacara {
+  background-color: #006C38;
+  width: auto;
+  text-decoration: none;
+  color: white;
+  padding: 5px 30px;
+}
+@media only screen and (max-width:767px) {
+  h3 > a.tatacara {
+    padding: 5px;
+  }
+}
+
+footer {
+  color: white;
+  background-color: #006C38;
+  padding: 5vh 20px;
+}
+footer .logo-container img {
+  width: min(80px, 30%);
+}
+@media only screen and (max-width:767px) {
+  footer {
+    padding: 10vh 20px;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+
+#btn-nav {
+  font-size: 3rem;
+}
+
+.aktif {
+  opacity: 100% !important;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}/*# sourceMappingURL=home.css.map */
