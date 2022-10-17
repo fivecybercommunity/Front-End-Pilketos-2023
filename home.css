@@ -84,7 +84,7 @@ nav .links a.login:hover {
     padding: 0 10px;
   }
 }
-.jumbotron h1, .jumbotron a {
+.jumbotron h1, .jumbotron p {
   color: white;
   font-weight: bold;
 }
@@ -96,7 +96,7 @@ nav .links a.login:hover {
   flex-direction: column;
   align-items: center;
 }
-.jumbotron a {
+.jumbotron p {
   background-color: #F37920;
   text-decoration: none;
 }
