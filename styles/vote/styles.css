@@ -11,20 +11,16 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 15px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 ::-webkit-scrollbar-track-piece {
   display: none;
 }
@@ -47,7 +43,7 @@ h2 {
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  color: #006C38;
+  color: #006c38;
   font-size: 24px;
 }
 
@@ -58,7 +54,7 @@ h4 {
 
 h5 {
   font-family: "Montserrat", sans-serif;
-  color: #006C38;
+  color: #006c38;
   font-size: 16px;
 }
 
@@ -78,128 +74,89 @@ p {
 }
 
 .caketos-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
   width: 768px;
   padding: 50px 0;
 }
-
 .caketos-wrapper .profil-caketos-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   margin: auto;
   width: 690px;
   padding: 50px 0;
 }
-
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos-wrapper-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .caketos-wrapper .profil-caketos-wrapper button {
   padding: 10px 20px;
   margin: 10px;
   border-radius: 25px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  color: #006C38;
+  color: #006c38;
   background-color: white;
-  border-color: #006C38;
+  border-color: #006c38;
 }
-
 .caketos-wrapper .profil-caketos-wrapper button:focus {
   color: white;
-  background-color: #1C6F4E;
+  background-color: #1c6f4e;
   border-color: white;
 }
-
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos {
   width: 200px;
-  border-color: #9F9F9F;
+  border-color: #9f9f9f;
   border-radius: 25px;
   border-style: solid;
   border-width: 2px;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos .nomor-urut {
   padding: 25px 0 5px 0;
   font-size: 24px;
 }
-
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos h5 {
   margin: auto;
   padding: 0 0 0 0;
   text-align: center;
 }
-
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos img {
   width: auto;
   height: 210px;
   margin: auto;
 }
-
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  color: #006C38;
+  color: #006c38;
   text-decoration: none;
   margin: auto;
   padding: 40px 0 20px 0;
   font-size: 16px;
   cursor: pointer;
 }
-
 .caketos-wrapper .tombol-submit {
   padding: 10px 20px;
   margin: 10px;
   border-radius: 25px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  color: #006C38;
+  color: #006c38;
   background-color: white;
-  border-color: #006C38;
+  border-color: #006c38;
 }
-
 .caketos-wrapper .tombol-submit:active {
   color: white;
-  background-color: #1C6F4E;
+  background-color: #1c6f4e;
   border-color: white;
 }
 
@@ -210,14 +167,10 @@ p {
   position: fixed;
   bottom: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  z-index: 2;
+  align-content: center;
+  z-index: 0;
 }
-
 .background-visi-misi .visi-misi-wrapper {
   width: 600px;
   height: 600px;
@@ -225,42 +178,30 @@ p {
   margin: auto;
   background-color: #ffffff;
   border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-item {
   overflow-y: scroll;
   margin: 40px 10px 10px 10px;
 }
-
 .background-visi-misi .visi-misi-wrapper .tombol-keluar {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-
 .background-visi-misi .visi-misi-wrapper .tombol-keluar img {
   cursor: pointer;
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-content {
   padding: 40px;
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-content .nama {
   text-align: center;
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-content .visi-misi {
   padding-top: 20px;
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-content img {
   height: 250px;
   width: auto;
@@ -268,16 +209,13 @@ p {
   margin: auto;
   padding-bottom: 40px;
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-content p {
   padding-left: 20px;
   color: rgba(0, 0, 0, 0.7);
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-content ul {
   padding-left: 20px;
 }
-
 .background-visi-misi .visi-misi-wrapper .visi-misi-content li {
   font-family: "Open Sans", sans-serif;
   padding: 2.5px;
@@ -288,69 +226,47 @@ p {
   h3 {
     color: white;
   }
-  .visi-misi, .nama {
+  .visi-misi,
+.nama {
     color: rgba(0, 108, 56, 0.8) !important;
   }
   .voting-wrapper {
     height: 100vh;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     position: relative;
   }
   .voting-wrapper .background {
     position: absolute;
-    z-index: -2;
+    z-index: 0;
     height: auto;
     width: 768px;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   .container {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 }
-
 @media (max-width: 480px) {
   .background {
     display: none;
   }
   .caketos-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
     width: 100%;
     padding: 50px 0;
   }
   .caketos-wrapper .profil-caketos-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     width: 100%;
     padding: 50px 0;
@@ -358,23 +274,15 @@ p {
   .caketos-wrapper .profil-caketos-wrapper .profil-caketos {
     width: 200px;
     margin: 20px;
-    border-color: #9F9F9F;
+    border-color: #9f9f9f;
     border-radius: 25px;
     border-style: solid;
     border-width: 2px;
     background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
   }
   .caketos-wrapper .profil-caketos-wrapper .profil-caketos h5 {
     margin: auto;
@@ -389,12 +297,9 @@ p {
     position: fixed;
     bottom: 0;
     right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    z-index: 2;
+    align-content: center;
+    z-index: 0;
   }
   .background-visi-misi .visi-misi-wrapper {
     width: 350px;
@@ -403,13 +308,8 @@ p {
     margin: auto;
     background-color: #ffffff;
     border-radius: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .background-visi-misi .visi-misi-wrapper .visi-misi-item {
     overflow-y: scroll;
@@ -419,7 +319,7 @@ p {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 2;
+    z-index: 0;
   }
   .background-visi-misi .visi-misi-wrapper .tombol-keluar img {
     cursor: pointer;
@@ -455,4 +355,7 @@ p {
     font-size: 12px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+nav {
+  position: relative;
+  z-index: 1;
+}/*# sourceMappingURL=styles.css.map */

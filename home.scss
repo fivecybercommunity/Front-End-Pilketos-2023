@@ -1,220 +1,235 @@
 @use "sass:map";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 //var
 $filter: rgba(28, 111, 78, 0.61);
-$bg-color1:#006C38;
-$yellow: #F37920;
+$bg-color1: #006c38;
+$yellow: #f37920;
 $white: white;
 
 //breakpoint
 $breakpoint: (
-    lg : (1:1024px,2:true),
-    md: (1:768px,2: 1023px),
-    sm: (1:true, 2:767px)
+  lg: (
+    1: 1024px,
+    2: true,
+  ),
+  md: (
+    1: 768px,
+    2: 1023px,
+  ),
+  sm: (
+    1: true,
+    2: 767px,
+  ),
 );
 
 //display component
 @mixin d($type) {
-    $arg:"";
-    $value : map.get($breakpoint, $type);
-    @if map.get($value, 1) == true{
-        $arg: "(max-width:#{map.get($value,2)})";
-    }@else if map.get($value, 2) == true{
-        $arg: "(max-width:#{map.get($value,1)})";
-    }@else{
-        $arg: "(min-width:#{map.get($value,1)}) and (max-width:#{map.get($value,2)})";
-    }
-    @media only screen and #{$arg} {
-        @content
-    }
-};
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  $arg: "";
+  $value: map.get($breakpoint, $type);
+  @if map.get($value, 1) == true {
+    $arg: "(max-width:#{map.get($value,2)})";
+  } @else if map.get($value, 2) == true {
+    $arg: "(max-width:#{map.get($value,1)})";
+  } @else {
+    $arg: "(min-width:#{map.get($value,1)}) and (max-width:#{map.get($value,2)})";
+  }
+  @media only screen and #{$arg} {
+    @content;
+  }
 }
 
-html{
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 //navbar
-nav{
-    //size
-    width: 100%;
-    height: 10vh;
-    background-color: $bg-color1;
+nav {
+  //size
+  width: 100%;
+  height: 10vh;
+  background-color: $bg-color1;
 
-    //position
+  //position
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    color: white;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
-    .logo{
-        color: white;
-        display: flex;
-        align-items: center;
-        
-        box-sizing: border-box;
-        padding: 5px;
-        height: 100%;
-        gap: 20px;
-        img{
-            height: 90%;
-        }
-        h1{
-            font-weight: bold;
-            margin: 0;
-        }
+    box-sizing: border-box;
+    padding: 5px;
+    height: 100%;
+    gap: 20px;
+    img {
+      height: 90%;
     }
+    h1 {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
 
-    .links{
-        @include d(sm){
-            position: fixed;
-            flex-direction: column;
-            background-color: $bg-color1;
-            width: 100vw;
-            height: 90vh;
-            top: 10vh;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.4s ease-in-out;
-        }
-        align-items: center;
-        display: flex;
-        gap: 30px;
-        a{
-            color: white;
-            text-decoration: none;
-        }
-        a.login{
-            border: white 1px solid;
-            padding: 5px 20px;
-            transition: all 0.5s ease-in-out;
-        }
-        a.login:hover{
-            background-color: white;
-            color: $bg-color1;
-        }
+  .links {
+    @include d(sm) {
+      position: fixed;
+      flex-direction: column;
+      background-color: $bg-color1;
+      width: 100vw;
+      height: 90vh;
+      top: 10vh;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
     }
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a.login {
+      border: white 1px solid;
+      padding: 5px 20px;
+      transition: all 0.5s ease-in-out;
+    }
+    a.login:hover {
+      background-color: white;
+      color: $bg-color1;
+    }
+  }
 }
 
 //jumbotron
-.jumbotron{
-    //size
-    width: 100%;
-    height: 92vh;
+.jumbotron {
+  //size
+  width: 100%;
+  height: 92vh;
 
-    //background
-    background: $filter url(./src/background.png) ;
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-position: center;
+  //background
+  background: $filter url(./src/background.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center;
 
-    //position
+  //position
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+
+  @include d(sm) {
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 10%;
+    padding: 0 10px;
+  }
+  #btn-profil-calon {
+    cursor: pointer;
+  }
+
+  h1,
+  p {
+    color: white;
+    font-weight: bold;
+  }
+
+  img {
+    height: 30%;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20%;
+  }
 
-    @include d(sm){
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 10%;
-        padding: 0 10px;
-    }
-
-    
-    h1,p{
-        color: white;
-        font-weight: bold;
-    }
-
-    img{
-        height: 30%;
-    }
-
-    .title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    p{
-        background-color: $yellow;
-        text-decoration: none;
-    }
+  p {
+    background-color: $yellow;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  p:hover {
+    background-color: #cd6d27;
+  }
 }
 
-.calon{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    row-gap: 30px;
-    .calonCard{
-        width: Min(80%, 250px);
-        border-bottom: $yellow solid 2px;
-        button{
-            color: $bg-color1;
-            font-weight: bold;
-        }
-        .no{
-            color: $bg-color1;
-            font-weight: bold;
-        }
+.calon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  row-gap: 30px;
+  .calonCard {
+    width: Min(80%, 250px);
+    border-bottom: $yellow solid 2px;
+    button {
+      color: $bg-color1;
+      font-weight: bold;
     }
-    .modal-body iframe{
-        width: 100%;
-        aspect-ratio: 560/315;
+    .no {
+      color: $bg-color1;
+      font-weight: bold;
     }
+  }
+  .modal-body iframe {
+    width: 100%;
+    aspect-ratio: 560/315;
+  }
 }
 
 h3 {
-    margin-top: 20px;
-    margin-bottom: 80px;
-    &> a.tatacara{
-        background-color: $bg-color1;
-        width: auto;
-        text-decoration: none;
-        color: white;
-        padding: 5px 30px;
-    }
-    @include d(sm){
-        &> a.tatacara{
-           padding: 5px; 
-        }
-    }
-}
-
-footer{
-    color: $white;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  & > a.tatacara {
     background-color: $bg-color1;
-    padding: 5vh 20px;
-    .logo-container img{
-        width: Min(80px,30%);
+    width: auto;
+    text-decoration: none;
+    color: white;
+    padding: 5px 30px;
+  }
+  @include d(sm) {
+    & > a.tatacara {
+      padding: 5px;
     }
-    @include d(sm){
-        padding: 10vh 20px;
-        p{
-            text-align: center;
-        }
+  }
+}
 
+footer {
+  color: $white;
+  background-color: $bg-color1;
+  padding: 5vh 20px;
+  .logo-container img {
+    width: Min(80px, 30%);
+  }
+  @include d(sm) {
+    padding: 10vh 20px;
+    p {
+      text-align: center;
     }
+  }
 }
 
-#btn-nav{
-    font-size: 3rem;
+#btn-nav {
+  font-size: 3rem;
 }
 
-.aktif{
-    opacity: 100% !important;
+.aktif {
+  opacity: 100% !important;
 }
 
-nav{
-    position:sticky;
-    top: 0;
+nav {
+  position: sticky;
+  top: 0;
 }
