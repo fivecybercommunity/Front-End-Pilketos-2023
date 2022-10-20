@@ -34,10 +34,11 @@
       </div>
     </nav>
     <!--form-->
-    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+    <!-- <div class="d-flex flex-column justify-content-center align-items-center text-center">
       <form
         class="d-flex flex-column justify-content-center align-items-center text-center text-white border-1 border border-light rounded-4 p-4 w-50"
         id="form"
+        action="vote.html"
       >
         <div class="mb-3 w-50 d-flex flex-column justify-content-center align-items-center form-group">
           <label for="exampleInputEmail1" class="form-label">Username</label>
@@ -53,9 +54,31 @@
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input placeholder="Masukkan Password Anda" type="password" class="form-control px-5 text-center" id="exampleInputPassword1" />
         </div>
-        <a href="./vote.html" class="bg-light rounded-3 p-2 text-dark">Submit</a>
+        <button type="submit" class="bg-light rounded-3 p-2 text-dark">Submit</button>
       </form>
+    </div> -->
+    
+    <div class="container d-flex justify-content-center align-items-center h-100">
+        <form action="vote.html" class="col-lg-6 col-12 col-sm-8 d-flex bg-white align-items-center  px-1 flex-column rounded-2 justify-content-center align-items-center py-5" onsubmit="passSubmit()" autocomplete="off" >
+            <h1 class="fs-1 fw-bold mt-3">Login</h1>
+            <p>Silakan login ke akun</p>
+            <div class="mb-3 w-75">
+              <label for="NIS" class="form-label">NIS</label>
+              <input type="number" class="form-control" id="NIS" required placeholder="Masukkan NIS">
+            </div>
+            <div class="mb-3 w-75">
+              <label for="Password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="Password" required placeholder="Masukkan Password">
+              <div class="mb-3 mt-1">
+                <input type="checkbox" class="form-check-input" id="showpassword" onclick="hidepass()">
+                <label class="form-check-label" for="showpassword">Tampilkan Password</label>
+            </div>
+            </div>
+
+            <button type="submit" class="tombolsubmit mb-3 w-75 btn btn-primary">Masuk</button>
+        </form>
     </div>
+  
 
     <!--footer-->
     <footer class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-5">
@@ -66,13 +89,6 @@
           <img src="./src/logo-pk 3.png" alt="" />
           <img src="./src/logo_FCC 2.png" alt="" />
         </div>
-      </div>
-
-      <!-- contact -->
-      <div class="contact d-flex flex-column">
-        <h6 class="fw-semibold fs-6">Kontak Panitia</h6>
-        <p class="fs-6"><i class="bi bi-whatsapp me-2"></i>087799999991 (Fulan)</p>
-        <p class="fs-6"><i class="bi bi-whatsapp me-2"></i>087799999991 (Fulan)</p>
       </div>
     </footer>
 
@@ -95,6 +111,25 @@
           navstatus = false;
         }
       });
+
+      function hidepass(){
+        const passCheckbox = document.getElementById('showpassword');
+        const passtext = document.getElementById('Password');
+
+        if(passCheckbox.checked == true){
+          passtext.type = 'text';
+        }else{
+          passtext.type = 'password';
+
+        }
+      }
+
+      function passSubmit(){
+        const passtext = document.getElementById('Password');
+        if(passtext.type != "password"){
+          passtext.type ="password";
+        }
+      }
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

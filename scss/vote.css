@@ -130,8 +130,8 @@ p {
   text-align: center;
 }
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos img {
-  width: auto;
-  height: 210px;
+  width: 80%;
+  height: auto;
   margin: auto;
 }
 .caketos-wrapper .profil-caketos-wrapper .profil-caketos h6 {
@@ -358,4 +358,20 @@ p {
 nav {
   position: relative;
   z-index: 1;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .background {
+    display: none;
+  }
+  .caketos-wrapper {
+    width: auto;
+  }
+  .profil-caketos-wrapper {
+    width: auto !important;
+    flex-direction: column !important;
+  }
+}
+.voting-wrapper {
+  margin: 100px 0;
 }/*# sourceMappingURL=vote.css.map */

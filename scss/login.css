@@ -23,4 +23,27 @@ body {
   #form .form-group {
     width: auto !important;
   }
+}
+.pra-login {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../src/background.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.tombolsubmit {
+  background-color: #F37920 !important;
+  --bs-primary: #F37920;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }/*# sourceMappingURL=login.css.map */

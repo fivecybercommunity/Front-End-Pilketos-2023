@@ -42,7 +42,7 @@
               <div class="profil-caketos">
                 <h5 class="nomor-urut">Nomor Urut 1</h5>
                 <h5>Aril Santo E. J.</h5>
-                <img src="./src/pak-eka.png" alt="" />
+                <img src="./src/CALON-1_page-0001-removebg-preview edit.png" alt=""  width="90%"/>
                 <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
               </div>
               <button id="caketos-1" onclick="tombolClick(this.id)">VOTE</button>
@@ -51,7 +51,7 @@
               <div class="profil-caketos">
                 <h5 class="nomor-urut">Nomor Urut 2</h5>
                 <h5>M. Fatih Delshady</h5>
-                <img src="./src/pak-eka.png" alt="" />
+                <img src="./src/CALON-2_page-0001-removebg-preview edit.png" alt="" width="90%" />
                 <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
               </div>
               <button id="caketos-2" onclick="tombolClick(this.id)">VOTE</button>
@@ -61,7 +61,7 @@
               <div class="profil-caketos">
                 <h5 class="nomor-urut">Nomor Urut 3</h5>
                 <h5>Yogatama V.</h5>
-                <img src="./src/pak-eka.png" alt="" />
+                <img src="./src/CALON-3_page-0001-removebg-preview edit.png" alt=""  width="90%"/>
                 <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
               </div>
               <button id="caketos-3" onclick="tombolClick(this.id)">VOTE</button>
@@ -77,7 +77,7 @@
         <div class="visi-misi-item">
           <div class="visi-misi-content display-none" id="caketos-aulia">
             <h3 class="nama">Aril Santo Efraem Jonathan</h3>
-            <img src="./src/pak-eka.png" alt="" />
+            <img src="./src/CALON-1_page-0001-removebg-preview edit.png" alt="" />
             <h3 class="visi-misi">Visi</h3>
             <div class="visi">
               <p>
@@ -99,7 +99,7 @@
           </div>
           <div class="visi-misi-content display-none" id="caketos-nabiel">
             <h3 class="nama">Muhammad Fatih Delshady</h3>
-            <img src="./src/pak-eka.png" alt="" />
+            <img src="./src/CALON-2_page-0001-removebg-preview edit.png" alt="" />
             <h3 class="visi-misi">Visi</h3>
             <div class="visi">
               <p>
@@ -118,7 +118,7 @@
           </div>
           <div class="visi-misi-content display-none" id="caketos-wildan">
             <h3 class="nama">Yogatama Viragufty</h3>
-            <img src="./src/pak-eka.png" alt="" />
+            <img src="./src/CALON-3_page-0001-removebg-preview edit.png" alt="" />
             <h3 class="visi-misi">Visi</h3>
             <div class="visi">
               <p>
@@ -161,12 +161,6 @@
         </div>
       </div>
 
-      <!-- contact -->
-      <div class="contact d-flex flex-column">
-        <h6 class="fw-semibold fs-6">Kontak Panitia</h6>
-        <p class="fs-6"><i class="bi bi-whatsapp me-2"></i>087799999991 (Fulan)</p>
-        <p class="fs-6"><i class="bi bi-whatsapp me-2"></i>087799999991 (Fulan)</p>
-      </div>
     </footer>
 
     <script src="./scripts/scripts.js"></script>
@@ -185,6 +179,26 @@
           }
         }
       }
+
+      //navbar
+      navstatus = false;
+      document.getElementById("btn-nav").addEventListener("click", () => {
+        navmenu = document.getElementById("nav-container");
+
+        if (!navstatus) {
+          navmenu.classList.toggle("d-none");
+          setTimeout(() => {
+            navmenu.classList.toggle("aktif");
+          }, 50);
+          navstatus = true;
+        } else {
+          navmenu.classList.toggle("aktif");
+          setTimeout(() => {
+            navmenu.classList.toggle("d-none");
+          }, 500);
+          navstatus = false;
+        }
+      });
     </script>
   </body>
 </html>
