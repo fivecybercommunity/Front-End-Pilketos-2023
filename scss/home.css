@@ -181,6 +181,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 5;
 }/*# sourceMappingURL=home.css.map */
 
 .tatacara-item {
