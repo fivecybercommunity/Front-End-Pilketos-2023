@@ -182,3 +182,12 @@ nav {
   position: sticky;
   top: 0;
 }/*# sourceMappingURL=home.css.map */
+
+.tatacara-item {
+  background-color: #FFFFFE;
+  width: 100%;
+}
+.tatacara-item img {
+  width: 100%;
+  height: auto;
+}
