@@ -29,7 +29,7 @@
       <i class="bi bi-list d-md-none text-white me-4" id="btn-nav"></i>
       <div class="links me-4 g-5 d-none d-md-flex pt-md-0 pt-5" id="nav-container">
         <a href="./index.html" class="fs-5 fw-bold">Home</a>
-        <a href="" class="fs-5 fw-bold">Tata Cara</a>
+        <a id="btn-tata" class="fs-5 fw-bold">Tata Cara</a>
         <a href="./login.html" class="fs-5 fw-bold login rounded-2">Login</a>
       </div>
     </nav>
@@ -39,7 +39,7 @@
       <div class="title text-center">
         <h1 class="fs-1">Pemilihan Ketua OSIS</h1>
         <h1 class="fs-1">SMAN 5 Bandung 2022</h1>
-        <p onclick="pergi()" class="fs-6 p-2 rounded-3 mt-5" id="btn-profil-calon">Profil Calon</p>
+        <p onclick="pergi('calon')" class="fs-6 p-2 rounded-3 mt-5" id="btn-profil-calon">Profil Calon</p>
       </div>
       <img src="./src/logo-SMAN_5.png" alt="" />
     </div>
@@ -323,23 +323,45 @@
         navmenu = document.getElementById("nav-container");
 
         if (!navstatus) {
-          navmenu.classList.toggle("d-none");
+          shownav();
+        } else {
+          hidenav();
+        }
+      });
+
+      document.getElementById('btn-tata').addEventListener("click", ()=>{
+        pergi("tataCara");
+        setTimeout(()=>{
+          hidenav();
+        }, 500)
+      })
+
+      function shownav(){
+        navmenu.classList.toggle("d-none");
           setTimeout(() => {
             navmenu.classList.toggle("aktif");
           }, 50);
           navstatus = true;
-        } else {
-          navmenu.classList.toggle("aktif");
+      }
+
+      function hidenav(){
+        navmenu.classList.toggle("aktif");
           setTimeout(() => {
             navmenu.classList.toggle("d-none");
           }, 500);
           navstatus = false;
-        }
-      });
-      gsap.registerPlugin(ScrollToPlugin);
-      function pergi() {
-        gsap.to(window, { duration: 0.1, scrollTo: { y: "#calon", offsetY: 100 } });
       }
+
+      gsap.registerPlugin(ScrollToPlugin);
+      function pergi(target) {
+        gsap.to(window, { duration: 0.1, scrollTo: { y: `#${target}`, offsetY: 100 } });
+      }
+
+      const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 3000,
+        
+      })
     </script>
   </body>
 </html>
