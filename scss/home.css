@@ -211,4 +211,19 @@ nav {
 
 .carousel-inner {
   transition: all 0.5s ease-in-out !important;
+}
+
+.carousel-item > div > img, .sambutankepsek > div > div > img {
+  margin-bottom: 30px;
+  width: 35%;
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .carousel-item > div > img, .sambutankepsek > div > div > img {
+    width: 40%;
+  }
+}
+@media only screen and (max-width:767px) {
+  .carousel-item > div > img, .sambutankepsek > div > div > img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=home.css.map */

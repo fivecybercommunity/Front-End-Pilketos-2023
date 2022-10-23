@@ -261,3 +261,15 @@ nav {
 .carousel-inner{
   transition: all 0.5s ease-in-out !important;
 }
+
+.carousel-item > div >img, .sambutankepsek>div>div>img{
+  margin-bottom: 30px;
+  width: 35%;
+  @include d(md){
+    width: 40%;
+  }
+
+  @include d(sm){
+    width: 50%;
+  }
+}
