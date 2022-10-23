@@ -239,8 +239,11 @@ nav {
   background-color: $bg-color1 !important;
 }
 
-#carouselExampleIndicators{
-  max-width: 600px;
+#carouselExampleIndicators, .sambutankepsek{
+  max-width: 800px;
+  @include d(md){
+    max-width: 600px;
+  }
 }
 
 .slide-btn{
@@ -253,4 +256,8 @@ nav {
   &:nth-child(2){
     right: -20px;
   }
+}
+
+.carousel-inner{
+  transition: all 0.5s ease-in-out !important;
 }

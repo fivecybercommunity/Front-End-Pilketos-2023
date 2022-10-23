@@ -188,8 +188,13 @@ nav {
   background-color: #006c38 !important;
 }
 
-#carouselExampleIndicators {
-  max-width: 600px;
+#carouselExampleIndicators, .sambutankepsek {
+  max-width: 800px;
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  #carouselExampleIndicators, .sambutankepsek {
+    max-width: 600px;
+  }
 }
 
 .slide-btn {
@@ -202,4 +207,8 @@ nav {
 }
 .slide-btn:nth-child(2) {
   right: -20px;
+}
+
+.carousel-inner {
+  transition: all 0.5s ease-in-out !important;
 }/*# sourceMappingURL=home.css.map */
