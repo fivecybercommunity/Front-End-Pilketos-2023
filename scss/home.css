@@ -63,6 +63,9 @@ nav .links a.login:hover {
   background-color: white;
   color: #006c38;
 }
+nav #btn-tata {
+  cursor: pointer;
+}
 
 .jumbotron {
   width: 100%;
@@ -188,11 +191,13 @@ nav {
   background-color: #006c38 !important;
 }
 
-#carouselExampleIndicators, .sambutankepsek {
+#carouselExampleIndicators,
+.sambutankepsek {
   max-width: 800px;
 }
 @media only screen and (min-width:768px) and (max-width:1023px) {
-  #carouselExampleIndicators, .sambutankepsek {
+  #carouselExampleIndicators,
+.sambutankepsek {
     max-width: 600px;
   }
 }
@@ -213,17 +218,20 @@ nav {
   transition: all 0.5s ease-in-out !important;
 }
 
-.carousel-item > div > img, .sambutankepsek > div > div > img {
+.carousel-item > div > img,
+.sambutankepsek > div > div > img {
   margin-bottom: 30px;
   width: 35%;
 }
 @media only screen and (min-width:768px) and (max-width:1023px) {
-  .carousel-item > div > img, .sambutankepsek > div > div > img {
+  .carousel-item > div > img,
+.sambutankepsek > div > div > img {
     width: 40%;
   }
 }
 @media only screen and (max-width:767px) {
-  .carousel-item > div > img, .sambutankepsek > div > div > img {
+  .carousel-item > div > img,
+.sambutankepsek > div > div > img {
     width: 50%;
   }
 }/*# sourceMappingURL=home.css.map */
