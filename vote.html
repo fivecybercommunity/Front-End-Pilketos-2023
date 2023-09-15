@@ -32,122 +32,126 @@
         <a href="./login.html" class="fs-5 fw-bold login rounded-2 d-none">Login</a>
       </div>
     </nav>
-    <div class="voting-wrapper">
-      <img src="./src/background.svg" class="background" alt="" />
-      <div class="container">
-        <div class="caketos-wrapper">
-          <h3>VOTE SEKARANG!</h3>
 
-          <div class="profil-caketos-wrapper">
-            <div class="profil-caketos-wrapper-2">
-              <div class="profil-caketos">
-                <h5 class="nomor-urut">Nomor Urut 1</h5>
-                <h5>Muhammad Fauzan N. R.</h5>
-                <img src="./src/calon1.jpg" alt="" class="rounded-circle" width="90%"/>
-                <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
-              </div>
-              <button id="caketos-1" onclick="tombolClick(this.id)">VOTE</button>
-            </div>
+    
+      <div class="voting-wrapper">
+        <img src="./src/background.svg" class="background" alt="" />
+        <div class="container">
+          <div class="caketos-wrapper">
+            <h3>VOTE SEKARANG!</h3>
 
-            <div class="profil-caketos-wrapper-2">
-              <div class="profil-caketos">
-                <h5 class="nomor-urut">Nomor Urut 2</h5>
-                <h5>Azka Fathir M</h5>
-                <img src="./src/calon2.jpg" class="rounded-circle" alt="" width="90%" />
-                <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
+            <div class="profil-caketos-wrapper">
+              <div class="profil-caketos-wrapper-2">
+                <div class="profil-caketos">
+                  <h5 class="nomor-urut">Nomor Urut 1</h5>
+                  <h5>Muhammad Fauzan N. R.</h5>
+                  <img src="./src/calon1.jpg" alt="" class="rounded-circle" width="90%"/>
+                  <h6 onclick="profilCaketos(1)">LIHAT PROFIL</h6>
+                </div>
+                <button id="caketos-1" onclick="tombolClick(this.id)">VOTE</button>
               </div>
-              <button id="caketos-2" onclick="tombolClick(this.id)">VOTE</button>
-            </div>
 
-            <div class="profil-caketos-wrapper-2">
-              <div class="profil-caketos">
-                <h5 class="nomor-urut">Nomor Urut 3</h5>
-                <h5>Azriandika Ramadhya</h5>
-                <img src="./src/calon3.jpg" alt="" class="rounded-circle" width="90%"/>
-                <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
+              <div class="profil-caketos-wrapper-2">
+                <div class="profil-caketos">
+                  <h5 class="nomor-urut">Nomor Urut 2</h5>
+                  <h5>Azka Fathir M</h5>
+                  <img src="./src/calon2.jpg" class="rounded-circle" alt="" width="90%" />
+                  <h6 onclick="profilCaketos(2)">LIHAT PROFIL</h6>
+                </div>
+                <button id="caketos-2" onclick="tombolClick(this.id)">VOTE</button>
               </div>
-              <button id="caketos-3" onclick="tombolClick(this.id)">VOTE</button>
+
+              <div class="profil-caketos-wrapper-2">
+                <div class="profil-caketos">
+                  <h5 class="nomor-urut">Nomor Urut 3</h5>
+                  <h5>Azriandika Ramadhya</h5>
+                  <img src="./src/calon3.jpg" alt="" class="rounded-circle" width="90%"/>
+                  <h6 onclick="profilCaketos(3)">LIHAT PROFIL</h6>
+                </div>
+                <button id="caketos-3" onclick="tombolClick(this.id)">VOTE</button>
+              </div>
             </div>
+            <form id="voteInput" name="voteInput" action="vote.html">
+              <button class="tombol-submit" type="submit">SUBMIT VOTE</button>
+              <div class="display-none">
+                <input class="input" type="radio" name="Pilihan" value="calon1" id="calon1" />
+                <input class="input" type="radio" name="Pilihan" value="calon2" id="calon2" />
+                <input class="input" type="radio" name="Pilihan" value="calon3" id="calon3" />
+              </div>
+            </form>
           </div>
-          <button class="tombol-submit" type="submit">SUBMIT VOTE</button>
         </div>
       </div>
-    </div>
 
-    <div class="background-visi-misi display-none" id="background-visi-misi">
-      <div class="visi-misi-wrapper">
-        <div class="visi-misi-item">
-          <div class="visi-misi-content display-none" id="caketos-aulia">
-            <h3 class="nama">Muhammad Fauzan N. R.</h3>
-            <img src="./src/calon1.jpg" class="rounded-circle" alt="" />
-            <h3 class="visi-misi">Visi</h3>
-            <div class="visi">
-              <p>
-                Menjadikan OSIS SMA Negeri 5 Bandung sebagai organisasi yang dinamis, progresif, dan inovatif, serta menanamkan sifat berkepribadian tangguh bagi Keluarga SMA Neger 5 Bandung, yang berlandaskan akhlak mulia dan Pancasila Misi .
-              </p>
+      <div class="background-visi-misi display-none" id="background-visi-misi">
+        <div class="visi-misi-wrapper">
+          <div class="visi-misi-item">
+            <div class="visi-misi-content display-none" id="caketos-aulia">
+              <h3 class="nama">Muhammad Fauzan N. R.</h3>
+              <img src="./src/calon1.jpg" class="rounded-circle" alt="" />
+              <h3 class="visi-misi">Visi</h3>
+              <div class="visi">
+                <p>
+                  Menjadikan OSIS SMA Negeri 5 Bandung sebagai organisasi yang dinamis, progresif, dan inovatif, serta menanamkan sifat berkepribadian tangguh bagi Keluarga SMA Neger 5 Bandung, yang berlandaskan akhlak mulia dan Pancasila Misi .
+                </p>
+              </div>
+              <h3 class="visi-misi">Misi</h3>
+              <div class="misi">
+                <ul>
+                  <li>Meningkatkan kualitas kinerja OSIS SMA Negeri 5 Bandung</li>
+                  <li>Mengembangkan karakter dan potensi minat dan bakat siswa melalui program kerja</li>
+                  <li>Menumbuhkan sifat kepribadian tangguh dan akhlak mulia melalui program kerja</li>
+                  <li>Menumbuhkan OSIS sebagai organisasi yang dapat menyesuaikan dengan perkembangan zaman agar tercipta sistem kerja yang efektif</li>
+                </ul>
+              </div>
             </div>
-            <h3 class="visi-misi">Misi</h3>
-            <div class="misi">
-              <ul>
-                <li>Meningkatkan kualitas kinerja OSIS SMA Negeri 5 Bandung</li>
-                <li>Mengembangkan karakter dan potensi minat dan bakat siswa melalui program kerja</li>
-                <li>Menumbuhkan sifat kepribadian tangguh dan akhlak mulia melalui program kerja</li>
-                <li>Menumbuhkan OSIS sebagai organisasi yang dapat menyesuaikan dengan perkembangan zaman agar tercipta sistem kerja yang efektif</li>
-              </ul>
+            <div class="visi-misi-content display-none" id="caketos-nabiel">
+              <h3 class="nama">Azka Fathir M</h3>
+              <img src="./src/calon2.jpg" class="rounded-circle" alt="" />
+              <h3 class="visi-misi">Visi</h3>
+              <div class="visi">
+                <p>
+                  OSIS SMA Negeri 5 Bandung sebagai organisasi yang dinamis komunikatif dengan berpijak serta pada agama dan kekeluargaan.
+                </p>
+              </div>
+              <h3 class="visi-misi">Misi</h3>
+              <div class="misi">
+                <ul>
+                  <li>Meningkatkan mutu kerja OSIS SMA Negeri 5 Bandung.</li>
+                  <li>Membangun hubungan baik antar OSIS SMA Negeri 5 Bandung dengan Keluarga Lima.</li>
+                  <li>Menyelaraskan program kerja OSIS SMA Negeri 5 Bandung dengan keadaan global</li>
+                  <li>Menumbuhkan etika unggul dimulai dari penerapan 5S</li>
+                </ul>
+              </div>
+            </div>
+            <div class="visi-misi-content display-none" id="caketos-wildan">
+              <h3 class="nama">Azriandika Ramadhya</h3>
+              <img src="./src/calon3.jpg" class="rounded-circle" alt="" />
+              <h3 class="visi-misi">Visi</h3>
+              <div class="visi">
+                <p>
+                  OSIS SMA Negeri 5 Bandung yang mengedepankan etika dan akhlak mulia serta mampu berpikir kritis agar terwujudnya siswa yang intelektual dan berkarakter pancasila.
+                </p>
+              </div>
+              <h3 class="visi-misi">Misi</h3>
+              <div class="misi">
+                <ul>
+                  <li>Meningkatkan mutu kerja OSIS SMA Negeri 5 Bandung.</li>
+                  <li>Membangun hubungan dan kerja sama yang baik dengan keluarga SMA Negeri 5 Bandung dan pihak eksternal</li>
+                  <li>Memfasilitasi minat dan bakat siswa.</li>
+                  <li>
+                    Melaksanakan program kerja yang mampu menumbuhkan karakter baik dan akhlak mulia.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="visi-misi-content display-none" id="caketos-nabiel">
-            <h3 class="nama">Azka Fathir M</h3>
-            <img src="./src/calon2.jpg" class="rounded-circle" alt="" />
-            <h3 class="visi-misi">Visi</h3>
-            <div class="visi">
-              <p>
-                OSIS SMA Negeri 5 Bandung sebagaiorganisasi yang dinamis komunikatif dengan berpijak serta pada agama dan kekeluargaan.
-              </p>
-            </div>
-            <h3 class="visi-misi">Misi</h3>
-            <div class="misi">
-              <ul>
-                <li>Meningkatkan mutu kerja OSIS SMA Negeri 5 Bandung.</li>
-                <li>Membangun hubungan baik antar OSIS SMA Negeri 5 Bandung dengan Keluarga Lima.</li>
-                <li>Menyelaraskan program kerja OSIS SMA Negeri 5 Bandung dengan keadaan global</li>
-                <li>Menumbuhkan etika unggul dimulai dari penerapan 5S</li>
-              </ul>
-            </div>
+          <div class="tombol-keluar">
+            <img onclick="keluar()" src="./styles/index/photos/vector/cross.svg" alt="" />
           </div>
-          <div class="visi-misi-content display-none" id="caketos-wildan">
-            <h3 class="nama">Azriandika Ramadhya</h3>
-            <img src="./src/calon3.jpg" class="rounded-circle" alt="" />
-            <h3 class="visi-misi">Visi</h3>
-            <div class="visi">
-              <p>
-                OSIS SMA Negeri 5 Bandung yang mengedepankan etika dan akhlak mulia serta mampu berpikir kritis agar terwujudnya siswa yang intelektual dan berkarakter pancasila.
-              </p>
-            </div>
-            <h3 class="visi-misi">Misi</h3>
-            <div class="misi">
-              <ul>
-                <li>Meningkatkan mutu kerja OSIS SMA Negeri 5 Bandung.</li>
-                <li>Membangun hubungan dan kerja sama yang baik dengan keluarga SMA Negeri 5 Bandung dan pihak eksternal</li>
-                <li>Memfasilitasi minat dan bakat siswa.</li>
-                <li>
-                  Melaksanakan program kerja yang mampu menumbuhkan karakter baik dan akhlak mulia.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="tombol-keluar">
-          <img onclick="keluar()" src="./styles/index/photos/vector/cross.svg" alt="" />
         </div>
       </div>
-    </div>
 
-    <div class="display-none">
-      <input class="input" type="radio" name="Pilihan" value="calon1" id="calon1" />
-      <input class="input" type="radio" name="Pilihan" value="calon2" id="calon2" />
-      <input class="input" type="radio" name="Pilihan" value="calon3" id="calon3" />
-    </div>
 
     <!--footer-->
     <footer class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-5">
@@ -165,18 +169,13 @@
     <script src="./scripts/scripts.js"></script>
     <script>
       function tombolClick(caketos) {
-        document.getElementById(caketos).focus();
-        if (caketos == "caketos-1") {
-          document.getElementById("calon1").click();
-        } else {
-          if (caketos == "caketos-2") {
-            document.getElementById("calon2").click();
-          } else {
-            if (caketos == "caketos-3") {
-              document.getElementById("calon3").click();
-            }
-          }
-        }
+        if(caketos=="caketos-1"){
+          document.getElementById("calon1").checked =true
+        }else if(caketos=="caketos-2"){
+          document.getElementById("calon2").checked = true
+        }else if(caketos=="caketos-3"){
+          document.getElementById("calon3").checked=true
+        }        
       }
 
       //navbar
