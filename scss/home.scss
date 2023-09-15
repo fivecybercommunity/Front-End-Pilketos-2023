@@ -141,7 +141,7 @@ nav {
   }
 
   h1,
-  p {
+  p,a {
     color: white;
     font-weight: bold;
   }
@@ -156,12 +156,12 @@ nav {
     align-items: center;
   }
 
-  p {
+  p,a {
     background-color: $yellow;
     text-decoration: none;
     transition: 0.3s;
   }
-  p:hover {
+  p:hover,a {
     background-color: #cd6d27;
   }
 }

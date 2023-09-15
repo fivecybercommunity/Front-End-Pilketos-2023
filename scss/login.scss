@@ -35,6 +35,9 @@ body {
 .tombolsubmit{
   background-color: #F37920 !important;
   --bs-primary: #F37920;
+  &:hover{
+    background-color: #da6d1f !important;
+  }
 }
 
 input::-webkit-outer-spin-button,

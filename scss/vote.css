@@ -4,7 +4,6 @@
   margin: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -227,7 +226,7 @@ p {
     color: white;
   }
   .visi-misi,
-.nama {
+  .nama {
     color: rgba(0, 108, 56, 0.8) !important;
   }
   .voting-wrapper {

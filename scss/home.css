@@ -91,7 +91,7 @@ nav #btn-tata {
   cursor: pointer;
 }
 .jumbotron h1,
-.jumbotron p {
+.jumbotron p, .jumbotron a {
   color: white;
   font-weight: bold;
 }
@@ -103,12 +103,12 @@ nav #btn-tata {
   flex-direction: column;
   align-items: center;
 }
-.jumbotron p {
+.jumbotron p, .jumbotron a {
   background-color: #f37920;
   text-decoration: none;
   transition: 0.3s;
 }
-.jumbotron p:hover {
+.jumbotron p:hover, .jumbotron a {
   background-color: #cd6d27;
 }
 
@@ -181,7 +181,6 @@ footer .logo-container img {
 }
 
 nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -197,7 +196,7 @@ nav {
 }
 @media only screen and (min-width:768px) and (max-width:1023px) {
   #carouselExampleIndicators,
-.sambutankepsek {
+  .sambutankepsek {
     max-width: 600px;
   }
 }
@@ -225,13 +224,13 @@ nav {
 }
 @media only screen and (min-width:768px) and (max-width:1023px) {
   .carousel-item > div > img,
-.sambutankepsek > div > div > img {
+  .sambutankepsek > div > div > img {
     width: 40%;
   }
 }
 @media only screen and (max-width:767px) {
   .carousel-item > div > img,
-.sambutankepsek > div > div > img {
+  .sambutankepsek > div > div > img {
     width: 50%;
   }
 }/*# sourceMappingURL=home.css.map */
