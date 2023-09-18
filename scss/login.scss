@@ -32,6 +32,13 @@ body {
   background-size: cover;
 }
 
+.kotak-login{
+  height:100%;
+  @media screen and (max-width: 768px){
+    height: 90%
+  };
+}
+
 .tombolsubmit{
   background-color: #F37920 !important;
   --bs-primary: #F37920;
